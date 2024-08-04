@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: local('../Montserrat/Montserrat-ExtraLight.ttf'),local('Montserrat/Montserrat-Black.ttf'),local('Montserrat/Montserrat-Bold.ttf'),local('Montserrat/Montserrat-Light.ttf'),local('Montserrat/Montserrat-Medium.ttf'),local('Montserrat/Montserrat-ExtraBold.ttf');
+    
+}
+
+body {
+    box-sizing: border-box;
+    display: flex;
+    max-width: 100%;
+    height: 100vh;
+    
+    justify-content: center;
+    
+}
+.content {
+    display: flexbox;
+    flex-wrap: wrap;
+    flex-direction: column !important;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-left: 50px;
+    justify-content: space-between;
+}
+
+.profil {
+    padding-bottom: 15px;
+    
+    margin-left: 0;
+    
+}
+.test {
+    padding-left: 10px;
+    z-index: 99;
+}
+.me {
+    margin-top: 10px;
+    padding: 10px;
+    margin-right: 100px;
+}
+
+.line {
+    width: 700px;
+    height: 5px;
+    background-color: rgb(203, 199, 199);
+    border-radius: 2px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+
+}
+h1 {
+
+    font-size: 100px;
+    font-weight: 100px;
+    font-family: 'Montserrat';
+    src: local('/fonts/Montserrat-Medium.ttf');
+    
+}
+b {
+    font-size: 100px;
+    font-weight: 500px;
+    color: rgb(26, 200, 230);
+    font-family: "Montserrat", "Helvetica Neue";
+    src: url("/Montserrat/Montserrat-ExtraBold.ttf");
+}
+.photo::after{
+    content: url("/img/треугольник.png");
+    vertical-align: middle;
+    display: inline-flex;
+    padding-right: 20px;
+    z-index: 1;
+    position: fixed;
+}
+
+.profil > h4 {
+    font-size: 30px;
+    margin-left: 20px;
+}
+.about {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.exp > h4 {
+    margin-top: 10px;
+    font-size: 20px;
+}
+.top {
+    display: flexbox;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+.person {
+    padding-left: 70px;
+    padding-top: 50px;
+    width: 300px;
+    background-image: url(/img/бол\ фон.png);
+    height: 100%;
+    position: relative;
+    right: 350px;
+    transition: 0.5s;
+    
+}
+.person:hover {
+    right: 0;
+}
+.photo > img {
+    border: 8px solid #fff;
+    border-radius: 6px;
+    align-self: center;
+    margin-bottom: 20px;
+}
+h2 {
+    letter-spacing: 3px;
+    font-family: '/Montserrat/Montserrat-ExtraBold.ttf';
+    text-transform: uppercase;
+}
+h3 {
+    text-transform: uppercase;
+    font-family: '/Montserrat/Montserrat-SemiBold.ttf'; 
+}
+h6 {
+    direction: rtl;
+}
+.white, .code, p, h3, h2 {
+    color: #fff;
+}
+.contacts {
+    padding: 10px;
+    display: flex;
+    
+
+}
+
+.nomer::before {
+    content: url("/img/Тел.svg");
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    vertical-align:middle;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.site::before {
+    content: url("/img/сайт.svg");
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.mail::before {
+    content: url("/img/почта.svg");
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.skill {
+    margin-top: 15px;
+}
+
+
+.skills {
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 5px;
+}
+.education {
+    margin-top: 20px;
+    margin-bottom: -20px;
+}
+.educations {
+    padding-top: 10px;
+    margin-top: 3px;
+}
+.js > h3{
+    padding-bottom: 5px;
+    padding-top: 15px;
+}
+.me > h2{
+    font-size: 30px;
+}
+.about, .exp{
+    width: 800px;
+    
+}
+.data {
+    font-size: 15px;
+}
+
+.soc {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    position: relative;
+    margin-top: 20px;
+    padding-left: 10px;
+    z-index: -1;
+    justify-content: center;
+    align-content: end;
+}
+
+/*@media  (min-width: 768px) {
+    body, .content, .top {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 20px;
+    }
+    
+    h1, b {
+        font-size: medium;
+    }
+    
+}*/
+
+
+
+
